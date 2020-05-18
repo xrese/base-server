@@ -123,7 +123,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'edu.isu.xrese:base-server:1.0.1'
+    implementation 'edu.isu.xrese:base-server:1.0.2'
 }
 ```
 
@@ -158,7 +158,7 @@ Then add the following dependency:
 <dependency>
   <groupId>edu.isu.xrese</groupId>
   <artifactId>base-server</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
