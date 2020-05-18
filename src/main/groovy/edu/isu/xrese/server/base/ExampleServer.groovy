@@ -31,7 +31,7 @@ import java.util.function.Consumer
  * An example implementation of the Basic Server
  *
  * @author Isaac Griffith
- * @version 1.0.1
+ * @version 1.0.2
  */
 @Singleton
 class ExampleServer extends BaseServer {
