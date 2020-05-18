@@ -145,6 +145,30 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
+            groupId = 'edu.isu.xrese'
+            artifactId = 'base-server'
+            version = '1.0.1'
+            pom {
+                name = 'XRESE Basic Microservice Server'
+                description = ''
+
+                license {
+                    license {
+                        name = 'MIT Licnese'
+                        url = 'http://www.opensource.org/licenses/mit-license.php'
+                        distribution = 'repo'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = 'grifisaa'
+                        name = 'Isaac D Griffith'
+                        email = 'grifisaa@isu.edu'
+                    }
+                }
+            }
+
             from(components.java)
         }
     }
