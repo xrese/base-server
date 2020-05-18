@@ -30,7 +30,7 @@ import org.javalite.activejdbc.Base
  * Utility class which sets up, opens, and closes a DB connection.\
  *
  * @author Isaac Griffith
- * @version 1.0.0
+ * @version 1.0.1
  */
 class DbManager {
 

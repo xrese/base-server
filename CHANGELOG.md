@@ -5,18 +5,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 05/18/2020
+## [1.0.1] - 2020-05-18
 
-### Modified
+### Changed
 
-* This file
-
-## [1.0.0] - 05/18/2020
+- CHANGELOG updated
+- README instructions to generate groovydoc
+- README instructions on publishing the package
 
 ### Added
 
-* The initial project including documentation in the README and CHANGELOG
-* Added the basic server
-* Added some basic information related to construction of the project
-* Added configuration loading and management
-* Added basic data import and export capabilities
+- Added an example server
+- Added github pages to the project
+- Added groovydoc to the pages
+
+## [1.0.0] - 2020-05-18
+
+### Added
+
+- The initial project including documentation in the README and CHANGELOG
+- Added the basic server
+- Added some basic information related to construction of the project
+- Added configuration loading and management
+- Added basic data import and export capabilities
