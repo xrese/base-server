@@ -32,7 +32,7 @@ import java.sql.Date
  * Class to export the contents of a database into a JSON document
  *
  * @author Isaac Griffith
- * @version 1.0.1
+ * @version 1.0.2
  */
 abstract class DataExporter {
 
