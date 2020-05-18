@@ -30,7 +30,7 @@ import org.javalite.activejdbc.Model
  * Class which imports the contents of a JSON document into the database
  *
  * @author Isaac Griffith
- * @version 1.0.1
+ * @version 1.0.2
  */
 abstract class DataImporter {
 

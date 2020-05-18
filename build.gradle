@@ -147,7 +147,7 @@ publishing {
         gpr(MavenPublication) {
             groupId = 'edu.isu.xrese'
             artifactId = 'base-server'
-            version = '1.0.1'
+            version = '1.0.2'
             pom {
                 name = 'XRESE Basic Microservice Server'
                 description = ''
@@ -183,4 +183,4 @@ groovydoc {
 
 activejdbc.toolVersion = "2.3"
 
-project.version = "1.0.1"
+project.version = "1.0.2"

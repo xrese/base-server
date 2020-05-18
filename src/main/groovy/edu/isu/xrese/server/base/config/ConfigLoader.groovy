@@ -28,7 +28,7 @@ package edu.isu.xrese.server.base.config
  * produces an instance of ModelContext
  *
  * @author Isaac Griffith
- * @version 1.0.1
+ * @version 1.0.2
  */
 @Singleton
 class ConfigLoader {

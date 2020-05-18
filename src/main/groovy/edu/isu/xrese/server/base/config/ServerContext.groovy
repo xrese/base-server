@@ -28,7 +28,7 @@ package edu.isu.xrese.server.base.config
  * This information includes (but not limited to) database connection information and server port number.
  *
  * @author Isaac Griffith
- * @version 1.0.1
+ * @version 1.0.2
  */
 class ServerContext {
 
