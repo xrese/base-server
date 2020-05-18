@@ -1,4 +1,4 @@
-package edu.isu.xrese.server.base
+package edu.isu.xrese.server.base.config
 
 /**
  * Utility class which loads the liquid-gamma configuration file and

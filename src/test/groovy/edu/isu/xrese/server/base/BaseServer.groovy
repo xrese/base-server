@@ -1,5 +1,10 @@
 package edu.isu.xrese.server.base
 
+import edu.isu.xrese.server.base.config.ConfigLoader
+import edu.isu.xrese.server.base.config.ServerContext
+import edu.isu.xrese.server.base.db.DataExporter
+import edu.isu.xrese.server.base.db.DataImporter
+import edu.isu.xrese.server.base.db.DbManager
 import io.javalin.Javalin
 import io.javalin.core.JavalinConfig
 
@@ -23,11 +28,14 @@ abstract class BaseServer {
     /**
      * Initializes the loads the configuration, sets up the database manager instance,
      * creates the server and calls to setup the routes.
+     *
+     * @param importer The DataImporter used to import data
+     * @param exporter The DataExporter used to export data
      */
-    final void init() {
+    final void init(DataImporter importer, DataExporter exporter) {
         ConfigLoader loader = ConfigLoader.instance
         context = loader.load(new File("server.conf"))
-        manager = DbManager.instance
+        manager = new DbManager(importer, exporter)
 
         app = Javalin.create(config())
 

@@ -1,4 +1,4 @@
-package edu.isu.xrese.server.base
+package edu.isu.xrese.server.base.config
 
 /**
  * Data class used to contain configuration information for the component currently operating.
