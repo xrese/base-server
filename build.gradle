@@ -73,18 +73,18 @@ dependencies {
     testImplementation 'org.mockito:mockito-junit-jupiter:3.2.4'
 }
 
-checkstyle {
-    toolVersion '7.8.1'
-    configFile file("conf/checkstyle/checkstyle.xml")
-}
-
-checkstyleMain {
-    source = 'src/main/groovy'
-}
-
-checkstyleTest {
-    source = 'src/test/groovy'
-}
+//checkstyle {
+//    toolVersion '7.8.1'
+//    configFile file("conf/checkstyle/checkstyle.xml")
+//}
+//
+//checkstyleMain {
+//    source = 'src/main/groovy'
+//}
+//
+//checkstyleTest {
+//    source = 'src/test/groovy'
+//}
 
 jacoco {
     toolVersion = '0.8.5'
@@ -97,7 +97,7 @@ test {
 spotbugs {
     effort = "max"
     reportLevel = "low"
-    includeFilter = file("excludes.xml")
+    includeFilter = file("conf/spotbugs/excludes.xml")
 }
 
 gitPublish {
