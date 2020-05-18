@@ -17,7 +17,7 @@ import java.util.function.Consumer
 abstract class BaseServer {
 
     protected Javalin app
-    protected ModelContext context
+    protected ServerContext context
     protected DbManager manager
 
     /**
@@ -68,6 +68,7 @@ abstract class BaseServer {
     /**
      * Hook Method which provides the JavalinConfig information to the server
      * the default returns an empty configuration
+     *
      * @return a Consumer of the JavalinConfig used in customizing the server
      */
     Consumer<JavalinConfig> config() {
