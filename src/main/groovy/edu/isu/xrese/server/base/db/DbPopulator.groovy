@@ -36,7 +36,7 @@ import java.sql.Statement
  * to a particular database.
  *
  * @author Isaac Griffith
- * @version 1.0.0
+ * @version 1.0.1
  */
 abstract class DbPopulator {
 

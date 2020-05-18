@@ -21,18 +21,46 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package edu.isu.xrese.server.base.config
+package edu.isu.xrese.server.base
+
+import io.javalin.core.JavalinConfig
+
+import java.util.function.Consumer
 
 /**
- * Data class used to contain configuration information for the component currently operating.
- * This information includes (but not limited to) database connection information and server port number.
+ * An example implementation of the Basic Server
  *
  * @author Isaac Griffith
  * @version 1.0.1
  */
-class ServerContext {
+@Singleton
+class ExampleServer extends BaseServer {
 
-    Map<String, String> db
-    Map<String, String> server
+    static void main(String[] args) {
+        ExampleServer app = ExampleServer.instance
+        app.init(null, null)
+        app.start()
+    }
+
+    /**
+     * Hook method for setting up the routes for this server. This
+     * method is called by init()
+     */
+    @Override
+    void routes() {
+        app.get("/") { ctx -> ctx.result("Hello World") }
+    }
+
+    /**
+     * Hook Method which provides the JavalinConfig information to the server
+     * the default returns an empty configuration
+     *
+     * @return a Consumer of the JavalinConfig used in customizing the server
+     */
+    @Override
+    Consumer<JavalinConfig> config() {
+        return { JavalinConfig config ->
+            config.enableWebjars()
+        }
+    }
 }
-
