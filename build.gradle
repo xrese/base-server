@@ -174,4 +174,11 @@ publishing {
     }
 }
 
+groovydoc {
+    source = sourceSets.main.allSource
+    windowTitle = 'XRESE - Base Server'
+    docTitle = "Baser Server ${version} API"
+    destinationDir = file('docs/javadoc')
+}
+
 activejdbc.toolVersion = "2.3"
